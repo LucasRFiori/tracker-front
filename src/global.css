@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main-map {
+  height: 100vh;
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-device-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-device-main {
+  text-align: center;
+}
+
+.device-list-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.select-device-main .device {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-device-main .device img {
+  width: 50px;
+  height: 50px;
+}
+
+.select-device-main .device figure {
+  flex: 0 1 10%;
+  margin: 0 10px 0 0;
+}
+
+.device-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 1 90%;
+}
+
+#main-map.socket .leaflet-marker-icon {
+  filter: invert(16%) sepia(94%) saturate(4961%) hue-rotate(356deg) brightness(102%) contrast(118%)
+}
